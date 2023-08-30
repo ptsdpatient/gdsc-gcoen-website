@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'gfont';
+  src: url('./fonts/Poppins-Medium.ttf');
+}
+p{
+  font-family:'gfont';
+}
 .header{
   width:'100%';
-  
+  background-color: #f0f0f0;
   display:flex;
 }
 html,body{
