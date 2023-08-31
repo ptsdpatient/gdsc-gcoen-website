@@ -1,4 +1,5 @@
 import Header from './Header'
+import Home from './Home'
 import './assets/App.css'
 import {useState,useEffect} from 'react'
 function App() {
@@ -17,6 +18,7 @@ useEffect(() => {
   return (
     <>
     <Header mobile={isMobile}/>
+    <Home />
     </>
   )
 }

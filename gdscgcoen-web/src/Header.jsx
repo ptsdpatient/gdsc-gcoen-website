@@ -8,7 +8,7 @@ const Header = (props)=>{
         setMobile(props.mobile);
     },[props.mobile])
 return(<>
-<div className="header" style={{height:'5rem',alignItems:'center',justifyContent:mobile?'space-between':'end'}}><img src={dropdownIcon} style={{display:mobile?'block':'none',width:'height',height:'2rem',marginLeft:'1rem'}}></img>
+<div className="header" style={{height:'5rem',alignItems:'center',justifyContent:mobile?'space-between':'start'}}><img src={dropdownIcon} style={{display:mobile?'block':'none',width:'height',height:'2rem',marginLeft:'1rem',margin:'auto'}}></img>
 <div style={{height:'100%',width:'auto',alignContent:'center',display:'flex'}}>
 <img src={gdscIcon} style={{width:'height',height:'1.5rem',marginLeft:'1rem',marginRight:'0.5rem'}}></img> 
 <div style={{width:'auto',marginLeft:'0.5rem'}}>
