@@ -8,13 +8,16 @@ const Header = (props)=>{
         setMobile(props.mobile);
     },[props.mobile])
 return(<>
-<div className="header" style={{height:'5rem',alignItems:'center',justifyContent:mobile?'space-between':'start'}}><img src={dropdownIcon} style={{display:mobile?'block':'none',width:'height',height:'2rem',marginLeft:'1rem',margin:'auto'}}></img>
-<div style={{height:'100%',width:'auto',alignContent:'center',display:'flex'}}>
-<img src={gdscIcon} style={{width:'height',height:'1.5rem',marginLeft:'1rem',marginRight:'0.5rem'}}></img> 
-<div style={{width:'auto',marginLeft:'0.5rem'}}>
-<p style={{margin:'0rem',fontSize:'1.2rem',width:'100%',color:'#5F6368',fontWeight:'1%'}}>GDSC GCOEN</p>
-</div>
-</div> </div>
+<div className="header" style={{height:'4rem'}}>
+    <div style={{width:'95%',height:'70%',display:'flex',justifyContent:mobile?'space-between':'',margin:'auto',alignItems:'center'}}>    
+    <div><img src={dropdownIcon} style={{width:'2.5rem',height:'width',display:mobile?'block':'none'}}></img>   </div>
+    
+    <div style={{height:'100%',display:'flex',alignItems:'center'}}> 
+        <div><img src={gdscIcon} style={{width:'3.5rem',height:'width',margin:'auto'}}></img></div>
+        <div><p style={{marginLeft:'0.5rem',color:'#505050'}}>GDSC GCOEN</p></div>
+    </div>
+
+</div></div>
 </>)
 }
 export default Header
