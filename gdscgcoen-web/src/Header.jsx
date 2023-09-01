@@ -1,6 +1,7 @@
 import './assets/App.css'
-import gdscIcon from './assets/images/gdsc-icon.webp'
+import gdscIcon from './assets/images/gdsc-icon.png'
 import dropdownIcon from './assets/images/menu-export.png'
+import themeIcon from './assets/images/theme-bright.png'
 import {useState,useEffect} from 'react'
 const Header = (props)=>{
     const [mobile,setMobile]=useState(props.mobile);
@@ -16,6 +17,8 @@ return(<>
         <div><img src={gdscIcon} style={{width:'3.5rem',height:'width',margin:'auto'}}></img></div>
         <div><p style={{marginLeft:'0.5rem',color:'#505050'}}>GDSC GCOEN</p></div>
     </div>
+    <div><img src={themeIcon} style={{width:'2rem',height:'width'}}></img>   </div>
+   
 
 </div></div>
 </>)
